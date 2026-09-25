@@ -151,8 +151,20 @@ hermes-skill-factory/
 │       └── git-pr-workflow/  # Example of a Skill Factory output
 │           └── SKILL.md
 ├── docs/
-│   └── how-it-works.md       # Architecture deep-dive
+│   ├── how-it-works.md       # Architecture deep-dive
+│   └── design-system/        # The design system all skills/plugins follow
+│       ├── DESIGN_SYSTEM.md  # Tokens, structure, voice, iconography, CLI components
+│       └── tokens.json       # Machine-readable version of the same rules
 └── install.sh                # One-command installer
+```
+
+Every generated (and hand-written) skill follows
+[`docs/design-system/DESIGN_SYSTEM.md`](docs/design-system/DESIGN_SYSTEM.md) —
+the frontmatter schema, section order, voice, and icon vocabulary used
+throughout this repo. Check a `SKILL.md` against it with:
+
+```bash
+python plugins/design_lint.py path/to/SKILL.md
 ```
 
 ---

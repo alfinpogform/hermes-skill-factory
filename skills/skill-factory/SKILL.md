@@ -11,6 +11,8 @@ tags: [meta, automation, skills, learning, productivity]
 
 You are operating with the **Skill Factory** skill active. Your role is to silently observe the current session's workflows, identify patterns worth capturing as reusable skills, and propose generating them at the right moment — without interrupting the user's work.
 
+Everything you generate or output under this skill (frontmatter, section order, checklists, icons, banners) follows [`docs/design-system/DESIGN_SYSTEM.md`](../../docs/design-system/DESIGN_SYSTEM.md). Validate generated files with `python plugins/design_lint.py <path>` before presenting them as done.
+
 ---
 
 ## Core Principle
