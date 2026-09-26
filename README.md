@@ -173,6 +173,8 @@ python plugins/design_lint.py path/to/SKILL.md
 
 See [docs/how-it-works.md](docs/how-it-works.md) for a full breakdown.
 
+For the design of a closed-loop, outcome-driven system on top of this — planning skills that measure their own success rate and propose gated self-patches — see [docs/self-improving-planning-skills.md](docs/self-improving-planning-skills.md).
+
 **TL;DR:**
 1. `SKILL.md` teaches the Hermes AI *how* to observe, detect, and propose skills
 2. `skill_factory.py` provides the `/skill-factory` commands and file generation
